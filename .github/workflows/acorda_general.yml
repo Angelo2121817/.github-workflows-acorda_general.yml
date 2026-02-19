@@ -1,12 +1,23 @@
-name: Manter Site Vivo
+name: Central de Comando (5 Sites)
+
 on:
   schedule:
     - cron: "0 */5 * * *" # Roda a cada 5 horas
-  workflow_dispatch: # Botão pra você testar manualmente se quiser
+  workflow_dispatch: # Botão pra testar manual
 
 jobs:
-  ping_site:
+  bombardeio_de_acorda:
     runs-on: ubuntu-latest
     steps:
-      - name: Acorda Metal Quimica
+      - name: Acorda Site 1
         run: curl -I https://sistema-labortec-fptkmmnvsfzalhpt33g4ev.streamlit.app/
+
+      - name: Acorda Site 2
+        run: curl -I https://lerolero-online-qyelyxqqcnuvp8l8phytfn.streamlit.app/
+
+      - name: Acorda Site 3
+        run: curl -I https://app-documentos-7l5ecrvyv7lhjl3ska9e3t.streamlit.app/
+      - name: Acorda Site 4
+        run: curl -I https://fluxogramas-naa9qfxn8kdjcwd9d4nf5s.streamlit.app/
+      - name: Acorda Site 5
+        run: curl -I https://8gd6mdnxtd2vczhgmgrjbw.streamlit.app/
