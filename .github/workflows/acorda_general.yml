@@ -9,15 +9,17 @@ jobs:
   bombardeio_de_acorda:
     runs-on: ubuntu-latest
     steps:
-      - name: Acorda Site 1
+      - name: Acorda Site 1 (Labortec)
         run: curl -I https://sistema-labortec-fptkmmnvsfzalhpt33g4ev.streamlit.app/
 
-      - name: Acorda Site 2
+      - name: Acorda Site 2 (LeroLero)
         run: curl -I https://lerolero-online-qyelyxqqcnuvp8l8phytfn.streamlit.app/
 
-      - name: Acorda Site 3
+      - name: Acorda Site 3 (Documentos)
         run: curl -I https://app-documentos-7l5ecrvyv7lhjl3ska9e3t.streamlit.app/
-      - name: Acorda Site 4
+
+      - name: Acorda Site 4 (Fluxogramas)
         run: curl -I https://fluxogramas-naa9qfxn8kdjcwd9d4nf5s.streamlit.app/
-      - name: Acorda Site 5
+
+      - name: Acorda Site 5 (Extra)
         run: curl -I https://8gd6mdnxtd2vczhgmgrjbw.streamlit.app/
