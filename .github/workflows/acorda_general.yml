@@ -2,7 +2,7 @@ name: Central de Comando (5 Sites)
 
 on:
   schedule:
-    - cron: "0 */5 * * *" # Roda a cada 5 horas
+    - cron: "0 */1 * * *" # Roda a cada 1 horas
   workflow_dispatch: # Botão pra testar manual
 
 jobs:
